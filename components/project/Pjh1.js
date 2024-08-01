@@ -1,12 +1,10 @@
-
 import React, { useEffect, useRef } from 'react';
-import { Image, Text, TouchableOpacity, View, StyleSheet, Animated } from 'react-native';
+import { Animated, Text, TouchableOpacity, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 export default function Pjh1() {
     const navigation = useNavigation();
     const fadeAnim = useRef(new Animated.Value(1)).current;
-    const moveAnim = useRef(new Animated.Value(0)).current;
 
     const handlePress = () => {
         navigation.navigate('Pjh2');
@@ -37,13 +35,11 @@ export default function Pjh1() {
         }}>
             <Animated.Image
                 source={require('../../assets/project/homeloade.png')}
-                style={
-                    {
-                        width: '100%',
-                        height: '100%',
-                        position: 'absolute',
-                    }
-                }
+                style={{
+                    width: '100%',
+                    height: '100%',
+                    position: 'absolute',
+                }}
                 resizeMode="cover"
             />
             <TouchableOpacity
@@ -58,7 +54,7 @@ export default function Pjh1() {
                 <Animated.Text style={{
                     color: 'white',
                     fontSize: 50,
-                    fontWeight: 'bold', 
+                    fontWeight: 'bold',
                     opacity: fadeAnim
                 }}>
                     กดเพื่อเริ่ม
@@ -67,7 +63,3 @@ export default function Pjh1() {
         </View>
     );
 }
-
-
-
-

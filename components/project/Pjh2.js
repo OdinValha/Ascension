@@ -15,29 +15,29 @@ export default function Pjh2() {
     }, [fadeAnim]);
 
     const handlePress = () => {
-        navigation.navigate('NextScreen'); // Change 'NextScreen' to the actual screen name you want to navigate to
+        navigation.navigate('Pjh3'); // Change 'NextScreen' to the actual screen name you want to navigate to
     };
 
     return (
         <View style={styles.container}>
-            <Animated.View style={[styles.box, { opacity: fadeAnim, backgroundColor: "#7cb48f", flex: 1 }]}>
+            <Animated.View style={[styles.box, { opacity: fadeAnim, backgroundColor: "#000000", flex: 1 }]}>
                 <Text style={styles.text}>โชคชะตา Lv.3</Text>
             </Animated.View>
-            <Animated.View style={[styles.box, { opacity: fadeAnim, backgroundColor: "#7CA1B4", flex: 3 }]}>
+            <Animated.View style={[styles.box, { opacity: fadeAnim, backgroundColor: "#000000", flex: 3 }]}>
                 <Image
                     source={require('../../assets/project/sena.png')}
                     style={styles.image}
                     resizeMode="cover"
                 />
             </Animated.View>
-            <Animated.View style={[styles.box, { opacity: fadeAnim, backgroundColor: "#6E6DD2", flex: 5, justifyContent: 'center', alignItems: 'center' }]}>
+            <Animated.View style={[styles.box, { opacity: fadeAnim, backgroundColor: "#000000", flex: 5, justifyContent: 'center', alignItems: 'center' }]}>
                 <Text style={styles.h1Text}>Tower Of Ascention</Text>
                 <Text style={styles.paragraphText1}>Now all my tales are based on the fundamental premise that common human laws and interests and emotions have no validity or significance in the vast cosmos-at-large. To me there is nothing but puerility in a tale in which the human form—and the local human passions and conditions and standards—are depicted as native to other worlds or other universes. To achieve the essence of real externality, whether of time or space or dimension, one must forget that such things as organic life, good and evil, love and hate, and all such local attributes of a negligible and temporary race called mankind, have any existence at all. Only the human scenes and characters must have human qualities. These must be handled with unsparing realism, (not catch-penny romanticism) but when we cross the line to the boundless and hideous unknown—the shadow-haunted Outside—we must remember to leave our humanity—and terrestrialism at the threshold.</Text>
             </Animated.View>
-            <Animated.View style={[styles.box, { opacity: fadeAnim, backgroundColor: "#7CA1B4", flex: 1, justifyContent: 'center', alignItems: 'center' }]}>
-                <Text style={styles.paragraphText}>ข้อความย่อ</Text>
+            <Animated.View style={[styles.box, { opacity: fadeAnim, backgroundColor: "#000000", flex: 1, justifyContent: 'center', alignItems: 'center' }]}>
+                <Text style={styles.paragraphText}>เลือกระดับความยาก : ยาก</Text>
             </Animated.View>
-            <Animated.View style={[styles.box, { opacity: fadeAnim, backgroundColor: "#6E6DD2", flex: 1, justifyContent: 'center', alignItems: 'center' }]}>
+            <Animated.View style={[styles.box, { opacity: fadeAnim, backgroundColor: "#000000", flex: 1, justifyContent: 'center', alignItems: 'center' }]}>
                 <Text style={styles.text}>ข้อความ</Text>
             </Animated.View>
 

@@ -107,7 +107,7 @@ const CharacterSelectionScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000', // หรือสีที่คุณต้องการ
+    backgroundColor: '#000', 
     alignItems: 'center',
     paddingTop: 100,
   },
